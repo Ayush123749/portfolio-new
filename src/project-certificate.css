@@ -1,0 +1,80 @@
+.project-card-live {
+  display: block;
+  color: inherit;
+}
+
+.project-card-live:focus-visible {
+  outline: 1px solid var(--mint);
+  outline-offset: 5px;
+}
+
+.project-status-row {
+  flex-wrap: wrap;
+}
+
+.project-status-informational {
+  max-width: 100%;
+  line-height: 1.6;
+}
+
+.featured-certificates {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+  margin: 20px 0 24px;
+  padding: 14px 18px;
+  border: 1px solid rgba(211, 237, 220, 0.1);
+  border-radius: 4px;
+  background: rgba(232, 255, 240, 0.018);
+}
+
+.hero-certificates {
+  display: grid;
+  justify-items: start;
+  gap: 5px;
+  width: min(385px, 100%);
+  margin: 5px 0 0;
+  padding: 10px 0 0;
+  border: 0;
+  border-top: 1px solid rgba(211, 237, 220, 0.08);
+  border-radius: 0;
+  background: transparent;
+}
+
+.featured-certificates-label {
+  color: #82938a;
+  font: 8px var(--mono);
+  letter-spacing: 0.08em;
+}
+
+.featured-certificates .research-document-link {
+  margin-top: 0;
+}
+
+.hero-project-preview {
+  display: grid;
+  justify-items: start;
+  gap: 5px;
+  width: min(385px, 100%);
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(211, 237, 220, 0.08);
+}
+
+.hero-project-preview .research-document-link {
+  margin-top: 0;
+}
+
+@media (max-width: 680px) {
+  .featured-certificates:not(.hero-certificates) {
+    align-items: flex-start;
+    gap: 10px 16px;
+    padding: 13px;
+  }
+
+  .hero-certificates {
+    gap: 5px;
+    padding-inline: 0;
+  }
+}
