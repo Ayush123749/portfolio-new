@@ -27,10 +27,10 @@ const projects = [
     status: 'INFORMATIONAL · NOT DEPLOYED',
   },
   {
-    number: '04', title: 'Multimodal Captioning', kind: 'VISION + LANGUAGE',
-    description: 'An image-to-text pipeline using BLIP and Transformers, tuned for context-aware captions with near real-time inference.',
+    number: '04', title: 'Multimodal Emotion Detection', kind: 'VISION + LANGUAGE',
+    description: 'A multimodal image-understanding pipeline using BLIP and Transformers, tuned for context-aware visual insights with near real-time inference.',
     stack: ['BLIP', 'Python', 'Transformers'], tone: 'vision',
-    status: 'INFORMATIONAL · NOT DEPLOYED',
+    status: 'LIVE DEPLOYMENT', liveUrl: 'https://imotion.vercel.app/',
   },
 ]
 
@@ -125,7 +125,7 @@ function App() {
         <section className="intro-strip" id="about"><div className="section-wrap intro-inner"><span className="eyebrow">01 / A LITTLE CONTEXT</span><p>From <em>research papers</em> to systems people can use.<br />I work across the full path, from an idea to a tested product.</p><span className="intro-location"><Radio size={13} /> MADHEPURA, INDIA</span></div></section>
 
         <section className="work-section section-wrap" id="work">
-          <SectionHeading index="02" eyebrow="SELECTED PROJECTS / 2024—26" title="Built to be useful." detail="The Graph RAG system is live; other entries are informational project summaries, not production deployments." />
+          <SectionHeading index="02" eyebrow="SELECTED PROJECTS / 2024—26" title="Built to be useful." detail="The Graph RAG and Multimodal Emotion Detection systems are live; other entries are informational project summaries, not production deployments." />
           <div className="project-grid">{projects.map((project, index) => {
             const cardContent = <>
               <ProjectVisual tone={project.tone} />
